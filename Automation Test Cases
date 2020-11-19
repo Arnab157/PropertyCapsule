@@ -1,0 +1,18 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class LaunchHomepage
+{
+	public static void main(String[] args) throws Exception
+	{
+		WebDriver driver=new FirefoxDriver();
+		// opens https://www.propertycapsule.com/ page
+		driver.get("https://www.propertycapsule.com/");
+	}
+}
+
+public clas MarketingTab
+{
+driver.manage().window().maximize();
+driver.findElement(By.xpath("//*[@id="search-btn"]")).click();
+}
