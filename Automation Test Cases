@@ -8,29 +8,25 @@ public class LaunchHomepage
 		WebDriver driver=new FirefoxDriver();
 		// opens https://www.propertycapsule.com/ page
 		driver.get("https://www.propertycapsule.com/");
-		MarketingTab();
+		MarketingTab(); 
 		TourbooksTab();
 		EnterpriseLoginButton();
-		
 	}
-static void MarketingTab()
+static void MarketingTab() //TC_03_Verify the Marketing Automation Tab
 {
 driver.manage().window().maximize();
 driver.findElement(By.xpath("//*[@id="search-btn"]")).click();
 }
-
-static void TourbooksTab()
+static void TourbooksTab() //TC_04_Verify the Tourbooks Tab
 {
 driver.manage().window().maximize();
 driver.findElement(By.xpath("//*[@id="manage-btn"]")).click();
 }
-
-static void EnterpriseLoginButton()
+static void EnterpriseLoginButton() //TC_05_Verify the Enterprise Admin Login Button
 {
 driver.manage().window().maximize();
 driver.findElement(By.xpath("/html/body/header/div[3]/div[3]/a[1]")).click();
 }
-
 }
 
 
