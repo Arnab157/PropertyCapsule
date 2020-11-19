@@ -11,8 +11,21 @@ public class LaunchHomepage
 	}
 }
 
-public clas MarketingTab
+public class MarketingTab
 {
 driver.manage().window().maximize();
 driver.findElement(By.xpath("//*[@id="search-btn"]")).click();
 }
+
+public class TourbooksTab
+{
+driver.manage().window().maximize();
+driver.findElement(By.xpath("//*[@id="manage-btn"]")).click();
+}
+
+public class EnterpriseLoginButton
+{
+driver.manage().window().maximize();
+driver.findElement(By.xpath("/html/body/header/div[3]/div[3]/a[1]")).click();
+}
+
